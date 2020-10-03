@@ -1,0 +1,3 @@
+/.ddev/
+/couch/**
+!/couch/config.php

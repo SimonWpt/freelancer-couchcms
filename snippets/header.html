@@ -1,0 +1,25 @@
+<cms:hide>
+    <cms:editable name='group_header' label='Header' type='group' collapsed='1'>
+        <cms:editable name='header_avatar' label='Avatar' type='file' order='10' />
+        <cms:editable name='header_alt' label='Avatar ALT-Text' type='text' order='20'/>
+        <cms:editable name='header_headline' label='Headline' type='text' order='30' />
+        <cms:editable name='header_subline' label='Subline' type='text' order='40'/>
+    </cms:editable>
+</cms:hide>
+<!-- Masthead-->
+<header class="masthead bg-primary text-white text-center">
+    <div class="container d-flex align-items-center flex-column">
+        <!-- Masthead Avatar Image-->
+        <img class="masthead-avatar mb-5" src="<cms:show header_avatar/>" alt="<cms:show header_alt/>" />
+        <!-- Masthead Heading-->
+        <h1 class="masthead-heading text-uppercase mb-0"><cms:show header_headline/></h1>
+        <!-- Icon Divider-->
+        <div class="divider-custom divider-light">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+        <!-- Masthead Subheading-->
+        <p class="masthead-subheading font-weight-light mb-0"><cms:show header_subline/></p>
+    </div>
+</header>

@@ -1,0 +1,34 @@
+<cms:hide>
+    <cms:editable name='group_about' label='Über uns' type='group' collapsed='1'>
+        <cms:editable name='about_headline' label='Überschrift' type='text' />
+        <cms:editable name='about_col1' label='Spalte 1' type='richtext' />
+        <cms:editable name='about_col2' label='Spalte 2' type='richtext' />
+        <cms:editable name='about_download' label='Download' type='text' />
+    </cms:editable>
+</cms:hide>
+
+<!-- About Section-->
+<section class="page-section bg-primary text-white mb-0" id="about">
+    <div class="container">
+        <!-- About Section Heading-->
+        <h2 class="page-section-heading text-center text-uppercase text-white"><cms:show about_headline /></h2>
+        <!-- Icon Divider-->
+        <div class="divider-custom divider-light">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+        <!-- About Section Content-->
+        <div class="row">
+            <div class="col-lg-4 ml-auto"><p class="lead"><cms:show about_col1 /></p></div>
+            <div class="col-lg-4 mr-auto"><p class="lead"><cms:show about_col2 /></p></div>
+        </div>
+        <!-- About Section Button-->
+        <div class="text-center mt-4">
+            <a class="btn btn-xl btn-outline-light" href="https://startbootstrap.com/themes/freelancer/">
+                <i class="fas fa-download mr-2"></i>
+                <cms:show about_download />
+            </a>
+        </div>
+    </div>
+</section>
